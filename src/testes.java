@@ -1,9 +1,11 @@
+
+import java.util.Scanner;
 public class testes {
     public static void main(String[] args) {
-        int i = 1;
-        while (i <= 5){
-            System.out.println(i);
-            i++;
-        }
+        Scanner input = new Scanner(System.in);
+        System.out.println("Valor: ");
+        String valor = input.nextLine().toLowerCase();
+        System.out.println(valor);
+        input.close();
     }
 }
