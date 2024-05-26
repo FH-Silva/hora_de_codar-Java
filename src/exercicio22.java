@@ -10,5 +10,26 @@
 
 public class exercicio22 {
     public static void main(String[] args) {
+        int total = 20;
+        int num = 10;
+
+        int i = 1;
+        while (i <= total) {
+            System.out.print("(" + i + ", ");
+
+            int inicio = (i - 1) * num + 1;
+            int fim = inicio + num - 1;
+            i++;
+
+            int j = inicio;
+            while (j <= fim) {
+                System.out.print(j);
+                if (j < fim) {
+                    System.out.print(", ");
+                }
+                j++;
+            }
+            System.out.println(")");
+        }
     }
 }
